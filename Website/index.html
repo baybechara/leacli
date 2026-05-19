@@ -56,80 +56,7 @@
 		<section class="main-section-vport uk-background-cover uk-background-center-center" uk-parallax="bgy: 100" style="background-image: url('img/main/bg1.jpg');">
 			<div class="main-section uk-background-cover uk-background-center-center rocket" uk-parallax="bgy: 100">
 				<div class="uk-container uk-container-large">
-					<header class="uk-visible@m" uk-sticky="offset: 16">
-						<div class="uk-grid-collapse uk-child-width-expand uk-flex-middle" uk-grid>
-							<div class="uk-width-auto">
-								<nav class="navbar">
-									<div class="uk-grid-small uk-flex-middle" uk-grid>
-										<div class="uk-width-auto">
-											<a href="/" class="logo"><img src="/img/components/logo.svg" alt="Маркетинговое Digital-агентство Leacli"></a>
-										</div>
-										<div class="uk-width-auto">
-											<a href="#cases">Кейсы</a>
-										</div>
-										<div class="uk-width-auto">
-											<a href="#strategy">Стратегия</a>
-										</div>
-										<div class="uk-width-auto">
-											<a href="#modal-menu" uk-toggle>Услуги</a>
-										</div>
-										<div class="uk-width-auto">
-											<a href="#special">Акции</a>
-										</div>
-										<div class="uk-width-auto">
-											<a href="#contact">Контакты</a>
-										</div>
-									</div>
-								</nav>
-							</div>
-							<div></div>
-							<div class="uk-width-auto@m">
-								<div class="astronaut"><img src="/img/main/austrnaut.png" alt="Агентство интернет рекламы"></div> 
-							</div>
-							<div class="uk-width-auto">
-								<div class="contactbar">
-									<div class="uk-grid-small uk-flex-middle" uk-grid>
-										<div>
-											<a href="#modal-form" uk-toggle class="uk-button uk-button-small uk-button-primary">
-												Начать сегодня
-											</a>
-										</div>
-										<!--div>
-											<a href="#" class="lang" id="lang-toggle" uk-toggle="target: #lang-drop">RU</a>
-											<div id="lang-drop" class="lang-drop" uk-drop="mode: click; pos: bottom-left">
-											  <div class="lang-card">
-												<ul class="uk-nav uk-nav-default uk-text-small">
-												  <li><a href="#">EN</a></li>
-												  <li><a href="#">RU</a></li>
-												</ul>
-											  </div>
-											</div>
-										</div-->
-									</div>
-								</div>
-							</div>
-						</div>
-					</header>
-					<div class="mob-header uk-hidden@m" uk-sticky="offset: 10">
-						<div class="uk-grid-small uk-child-width-expand uk-flex-middle" uk-grid>
-							<div class="uk-width-auto">
-								<a class="mob-header-logo">
-									<img src="/img/components/logo.svg" alt="Рекламное Performance-агентство Leacli">
-								</a>
-							</div>
-							<div class="uk-width-expand"></div>
-							<div class="uk-width-auto">
-								<div class="astronaut"><img src="/img/main/austrnaut.png" alt="Реклама сайта в Google"></div> 
-							</div>
-							<div class="uk-width-auto">
-								<a href="#modal-form" class="uk-display-block" uk-toggle><img src="/img/icons/rocketlaunch.svg" width="44" alt="Заказать рекламу">
-								</a>
-							</div>
-							<div class="uk-width-auto">
-								<a href="#offcanvas-reveal" uk-toggle class="uk-display-block"><img src="/img/components/nav.svg" width="44" alt="Услуги рекламы в интернете"></a>
-							</div>
-						</div>
-					</div>
+					<div id="leacli-header"></div>
 				</div>
 				<div class="uk-container">
 					<div class="main-body">
@@ -847,9 +774,6 @@
 										<span class="check-icon"></span> Бюджет от 
 										<span class="price-tag">$150/месяц</span>
 									</li>
-									<li>
-										<div class="divider"></div>
-									</li>
 									<li><span class="check-icon"></span> Запуск от 3 дней</li>
 									<li><span class="check-icon"></span> Ведение от 3 месяцев</li>
 									<li>
@@ -888,9 +812,6 @@
 									<li>
 										<span class="check-icon"></span> Бюджет от 
 										<span class="price-tag">$300/месяц</span>
-									</li>
-									<li>
-										<div class="divider"></div>
 									</li>
 									<li><span class="check-icon"></span> Запуск от 10 дней</li>
 									<li><span class="check-icon"></span> Ведение от 3 месяцев</li>
@@ -933,9 +854,6 @@
 										<span class="check-icon"></span> Бюджет от 
 										<span class="price-tag">$1000/месяц</span>
 									</li>
-									<li>
-										<div class="divider"></div>
-									</li>
 									<li><span class="check-icon"></span> Запуск от 40 дней</li>
 									<li><span class="check-icon"></span> Ведение от 6 месяцев</li>
 									<li>
@@ -953,287 +871,16 @@
 			</div>
 		</section>
 
-		<section class="cta">
-			<div class="uk-container">
-				<h2 class="text-white uk-text-center uk-text-uppercase uk-text-bold uk-margin-remove-bottom">Начнём создание</h2>
-				<svg viewbox="0 0 200 20">
-				  <defs>
-					<linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
-					  <stop offset="50%" stop-color="#FF8222"/>
-					  <stop offset="50%" stop-color="#FF8222"/>
-					</linearGradient>
-					<pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
-					  <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
-						<animateTransform
-							attributeName="transform"
-							begin="0s"
-							dur="1.5s"
-							type="translate"
-							from="0,0"
-							to="40,0"
-							repeatCount="indefinite" />
-					  </path>
-					</pattern>
-				  </defs>
-				  <text text-anchor="middle" x="100" y="17" font-size="15" fill="url(#wave)"  fill-opacity="1">ПОТОКА КЛИЕНТОВ?</text>
-				  <text text-anchor="middle" x="100" y="17" font-size="15" fill="url(#gradient)" fill-opacity="0.1">ПОТОКА КЛИЕНТОВ?</text>
-				</svg>
-				<div class="uk-hidden@m uk-text-center uk-margin-top">
-					<img src="/img/main/victor2.png" class="victor-cta" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; end: 50vh + 50%;" alt="Лучшее маркетинговое агентство">
-					<div>
-						<a href="#modal-form" uk-toggle class="uk-button uk-button-large uk-button-primary" uk-parallax="opacity: 0,1;  end: 50vh + 50%;">Начать сегодня</a>
-					</div>
-				</div>
-				<div class="uk-inline uk-dark box-rounded uk-visible@m">
-					<img src="/img/main/footer.jpg" alt="Лучшее рекламное агентство">
-					<div class="uk-position-absolute uk-transform-center" style="left: 50%; top: 15%" href="#" >
-						<img src="/img/main/victor2.png" class="victor-cta" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; end: 50vh + 50%;" alt="Лучшее digital агентство">
-					</div>
-					<div class="uk-position-absolute uk-transform-center" style="left: 50%; top: 30%" href="#" >
-						<a href="#modal-form" uk-toggle class="uk-button uk-button-large uk-button-primary" uk-scrollspy="cls:uk-animation-shake; repeat: true">Начать сейчас</a>
-					</div>
-					<div class="uk-position-absolute uk-transform-center" style="left: 40%; top: 77%" href="#" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay: 300">
-						<img src="/img/main/cta/2.png" class="icons-cta" alt="Заказать настройку рекламы в YouTube цены">
-					</div>
-					<div class="uk-position-absolute uk-transform-center" style="left: 59%; top: 77%" href="#" href="#" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay: 200">
-						<img src="/img/main/cta/3.png" class="icons-cta" alt="Заказать настройку рекламы в Meta, Facebook, Instagram цены">
-					</div>
-					<div class="uk-position-absolute uk-transform-center" style="left: 31%; top: 58%" href="#" href="#" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay: 400">
-						<img src="/img/main/cta/1.png" class="icons-cta" alt="Заказать настройку рекламы в Гугл цены">
-					</div>
-					<div class="uk-position-absolute uk-transform-center" style="left: 68%; top: 58%" href="#" href="#" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay: 500">
-						<img src="/img/main/cta/4.png" class="icons-cta" alt="Заказать настройку поисковой рекламы и SEO в Google и Яндекс">
-					</div>
-					<div class="uk-position-absolute uk-transform-center" style="left: 50%; top: 58%" href="#" href="#" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay: 100">
-						<a href="#modal-form" uk-toggle class="circlebg uk-background-norepeat uk-background-center-center" style="background-image: url(img/main/cta/ellipse2.svg);">
-							<div class="sscc uk-background-norepeat uk-background-center-center" style="background-image: url(img/main/cta/ellipse.svg);">
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
+		<div id="leacli-cta"></div>
 		
-		<footer id="contact">
-			<div class="uk-container uk-container-large">
-				<div class="leacli-footer">
-					<div>
-						<div class="uk-child-width-1-2@s uk-child-width-1-4@m" uk-grid>
-							<div class="leacli-company-info">
-								<a href="/" class="leacli-logo"><img src="/img/components/logo.svg" style="max-width: 140%;" alt="Лучшее агентство интернет маркетинга и разработки сайтов"></a>
-								<div><a href="tel:+996553555255" class="leacli-phone" onclick="gtag('event', 'click_tel', {});"><img src="/img/icons/phone.svg" width="24" class="uk-margin-small-right" alt="Номер маркетингового агентства">+996 553 55-52-55</a></div>
-								<div><a href="mailto:info@leacli.com" class="leacli-phone" onclick="gtag('event', 'click_mail', {});"><img src="/img/icons/mail.svg" width="24" class="uk-margin-small-right" alt="Заказать услуги рекламы">info@leacli.com</a></div>
-							</div>
-							<div class="leacli-section">
-								<div class="leacli-section-footer-menu">
-									<h5 class="uk-h5 uk-text-bold leacli-section-title">Продвижение</h5>
-									<ul class="uk-list leacli-section-list">
-										<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Контекстная реклама</a></li>
-										<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Медийная реклама</a></li>
-										<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Таргетированная реклама</a></li>
-										<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">SEO-оптимизация</a></li>
-										<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">SMM-продвижение</a></li>
-										<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Управление репутацией</a></li>
-										<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Аналитика данных</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="leacli-section">
-								<div class="leacli-section-footer-menu">
-									<h5 class="uk-h5 uk-text-bold leacli-section-title">Разработка</h5>
-									<ul class="uk-list leacli-section-list">
-										<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Сайты визитки</a></li>
-										<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Мобильные лендинги</a></li>
-										<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Адаптивные лендинги</a></li>
-										<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Корпоративные сайты</a></li>
-										<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Интернет магазины</a></li>
-										<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Мобильные приложения</a></li>
-										<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">SaaS-сервисы</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="leacli-section">
-								<div class="leacli-section-footer-menu">
-									<h5 class="uk-h5 uk-text-bold leacli-section-title">Дизайн</h5>
-									<ul class="uk-list leacli-section-list">
-										<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Графический дизайн</a></li>
-										<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Фирменный стиль</a></li>
-										<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Логотипы</a></li>
-										<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Веб дизайн</a></li>
-										<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">UI/UX</a></li>
-										<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Дизайн сайтов</a></li>
-										<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Дизайн баннеров</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<div class="leacli-footer-cta uk-light uk-margin-medium-top">
-							<form id="contact-form2">
-								<div class="uk-grid-small uk-child-width-expand@m uk-flex-middle" uk-grid>
-									<div class="uk-width-1-4">
-										<h5 class="uk-h4 uk-text-bold text-white">Познакомимся?</h5>
-									</div>
-									<div>
-										<div class="uk-inline uk-width-1-1">
-											<span class="uk-form-icon">
-												<img src="/img/icons/user.svg">
-											</span>
-											<input class="uk-input uk-form-width-medium uk-form-width-large border-rounded" type="text" name="name" placeholder="Имя" aria-label="Ваше имя" required>
-										</div>
-									</div>
-									<div>
-										<input class="uk-input uk-form-width-medium uk-form-width-large border-rounded" type="tel" name="phone" id="phone2" aria-label="Номер телефона" required>
-										<p id="message2" class="invnumber"></p>
-									</div>
-									<input type="hidden" name="request" value="Познакомиться">
-									<input type="hidden" name="utm_source" value="<?php $utm_source = $_GET['utm_source']; echo $utm_source; ?>">
-									<input type="hidden" name="utm_medium" value="<?php $utm_medium = $_GET['utm_medium']; echo $utm_medium; ?>">
-									<input type="hidden" name="utm_campaign" value="<?php $utm_campaign = $_GET['utm_campaign']; echo $utm_campaign; ?>">
-									<input type="hidden" name="utm_term" value="<?php $utm_term = $_GET['utm_term']; echo $utm_term; ?>">
-									<div>
-										<div class="uk-width-expand">
-											<button class="uk-button uk-button-primary uk-width-1-1">Позвони мне :)</button>
-										</div>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-				<div class="uk-grid uk-flex-middle leacli-bottom">
-					<div class="uk-width-auto@m">
-						<p class="uk-text-small uk-text-muted leacli-copyright">Маркетинговое агентство «Leacli» © 2016-<script>document.write(new Date().getFullYear());</script></p>
-					</div>
-					<!--<div class="uk-width-auto">
-						<a href="#" class="uk-text-small uk-link-muted leacli-bottom-link">Terms of Service</a>
-					</div>
-					<div class="uk-width-auto">
-						<a href="#" class="uk-text-small uk-link-muted leacli-bottom-link">Privacy Policy</a>
-					</div>-->
-					<div class="uk-width-expand">
-					</div>
-					<div class="uk-width-auto@m">
-						<span class="leacli-made-with-love"><img src="/img/icons/heart.svg" class="uk-margin-small-right" width="24" alt="Разработка лендингов, корпоративных сайтов, сайтов визиток, интернет магазинов, SaaS, маркетплейсов и IT под ключ">Сделано от души</span>
-					</div>
-				</div>
-			</div>
-		</footer>
+		<div id="leacli-footer"></div>
 
 
-		<div id="modal-menu" class="uk-modal-container" uk-modal>
-			<div class="uk-modal-dialog uk-modal-body">
-				<button class="uk-modal-close-default" type="button" uk-close></button>
-				<h2 class="uk-modal-title uk-text-bold">УСЛУГИ</h2>
-				<div>
-					<div class="uk-grid-medium uk-grid-divider uk-child-width-1-4@m" uk-grid>
-						<div>
-							<div class="uk-overflow-hidden border-rounded">
-								<img src="/img/services/main/marketing.jpg" width="1800" height="1200" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" class="uk-scrollspy-inview" alt="Услуги продвижения сайтов и рекламы">
-							</div>
-							<div class="uk-margin-top">
-								<h5 class="uk-h3 uk-text-bold">Продвижение</h5>
-								<ul class="uk-list leacli-modal-list">
-									<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Контекстная реклама</a></li>
-									<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Медийная реклама</a></li>
-									<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Таргетированная реклама</a></li>
-									<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">SEO-оптимизация</a></li>
-									<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">SMM-продвижение</a></li>
-									<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Управление репутацией</a></li>
-									<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Аналитика данных</a></li>
-								</ul>
-							</div>
-						</div>
-						<div>
-							<div class="uk-overflow-hidden border-rounded">
-								<img src="/img/services/main/development.jpg" width="1800" height="1200" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" class="uk-scrollspy-inview" alt="Услуги разработки сайтов">
-							</div>
-							<div class="uk-margin-top">
-								<h5 class="uk-h3 uk-text-bold">Разработка</h5>
-								<ul class="uk-list leacli-modal-list">
-									<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Сайты визитки</a></li>
-									<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Мобильные лендинги</a></li>
-									<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Адаптивные лендинги</a></li>
-									<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Корпоративные сайты</a></li>
-									<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Интернет магазины</a></li>
-									<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Мобильные приложения</a></li>
-									<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">SaaS-сервисы</a></li>
-								</ul>
-							</div>
-						</div>
-						<div>
-							<div class="uk-overflow-hidden border-rounded">
-								<img src="/img/services/main/design.jpg" width="1800" height="1200" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" class="uk-scrollspy-inview" alt="Услуги web-дизайна">
-							</div>
-							<div class="uk-margin-top">
-								<h5 class="uk-h3 uk-text-bold">Дизайн</h5>
-								<ul class="uk-list leacli-modal-list">
-									<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Графический дизайн</a></li>
-									<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Фирменный стиль</a></li>
-									<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Логотипы</a></li>
-									<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Веб дизайн</a></li>
-									<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">UI/UX</a></li>
-									<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Дизайн сайтов</a></li>
-									<li><a href="#modal-form" uk-toggle class="uk-link-muted leacli-link">Дизайн баннеров</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<div id="leacli-modal-menu"></div>
 
-		<div id="modal-form" class="uk-flex-top" uk-modal>
-			<div class="uk-modal-dialog uk-margin-auto-vertical uk-modal-body">
-				<button class="uk-modal-close-default" type="button" uk-close></button>
-				<div class="uk-margin-medium-top">
-					<form id="contact-form">
-						<div class="uk-margin">
-							<div class="uk-inline uk-width-1-1">
-								<span class="uk-form-icon">
-									<img src="/img/icons/user.svg">
-								</span>
-								<input class="uk-input uk-form-large uk-border-rounded" type="text" name="name" placeholder="Имя" aria-label="Ваше имя" required>
-							</div>
-						</div>
-						<div class="uk-margin">
-							<input class="uk-input uk-form-large uk-border-rounded" type="tel" name="phone" id="phone" aria-label="Номер телефона" required>
-							<p id="message" class="invnumber"></p>
-						</div>
-						<input type="hidden" name="request" value="Модалка">
-						<input type="hidden" name="utm_source" value="<?php $utm_source = $_GET['utm_source']; echo $utm_source; ?>">
-						<input type="hidden" name="utm_medium" value="<?php $utm_medium = $_GET['utm_medium']; echo $utm_medium; ?>">
-						<input type="hidden" name="utm_campaign" value="<?php $utm_campaign = $_GET['utm_campaign']; echo $utm_campaign; ?>">
-						<input type="hidden" name="utm_term" value="<?php $utm_term = $_GET['utm_term']; echo $utm_term; ?>">
-						<div class="uk-margin uk-text-center">
-							<button class="uk-form-width-1-1 uk-button uk-button-large uk-button-primary">Отправить заявку</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
+		<div id="leacli-modal-form"></div>
 
-		<div id="offcanvas-reveal" uk-offcanvas="mode: reveal; flip: true">
-			<div class="uk-offcanvas-bar uk-flex uk-flex-column uk-text-center">
-				<button class="uk-offcanvas-close uk-close-large" type="button" uk-close uk-toggle="cls: uk-close-large; mode: media; media: @s"></button>
-				<ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical" uk-nav>
-					<li><a href="#cases">Кейсы</a></li>
-					<li><a href="#strategy">Стратегия</a></li>
-					<li><a href="#modal-menu" uk-toggle>Услуги</a></li>
-					<li><a href="#special">Акции</a></li>
-					<li><a href="#contact">Контакты</a></li>
-				</ul>
-				<!--div>
-					<a class="language-switch">
-						<span class="language-option">
-							<img src="/img/components/globe.svg">
-							RU
-						</span>
-						<span class="language-selected">EN</span>
-					</a>
-				</div-->
-			</div>
-		</div>
+		<div id="leacli-mobile-menu"></div>
 		<a href="https://api.whatsapp.com/send/?phone=996553555255&amp;text=Здравствуйте, хочу заказать рекламу в Google" target="_blank" title="Написать в Whatsapp" rel="noopener noreferrer" onclick="gtag('event', 'click_whatsapp', {});">
 			<div class="wa-button"></div>
 		</a>
@@ -1344,5 +991,6 @@
 			message2.style.display = 'none';
 		};
 		</script>
+	<script src="/js/components.js"></script>
 	</body>
 </html>

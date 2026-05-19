@@ -665,57 +665,9 @@
 			</div>
 		</div>
 
-		<div id="modal-form" class="uk-flex-top" uk-modal>
-			<div class="uk-modal-dialog uk-margin-auto-vertical uk-modal-body">
-				<button class="uk-modal-close-default" type="button" uk-close></button>
-				<div class="uk-margin-medium-top">
-					<form id="contact-form">
-						<div class="uk-margin">
-							<div class="uk-inline uk-width-1-1">
-								<span class="uk-form-icon">
-									<img src="/img/icons/user.svg">
-								</span>
-								<input class="uk-input uk-form-large uk-border-rounded" type="text" name="name" placeholder="Имя" aria-label="Ваше имя" required>
-							</div>
-						</div>
-						<div class="uk-margin">
-							<input class="uk-input uk-form-large uk-border-rounded" type="tel" name="phone" id="phone" aria-label="Номер телефона" required>
-							<p id="message" class="invnumber"></p>
-						</div>
-						<input type="hidden" name="request" value="Модалка">
-						<input type="hidden" name="utm_source" value="<?php $utm_source = $_GET['utm_source']; echo $utm_source; ?>">
-						<input type="hidden" name="utm_medium" value="<?php $utm_medium = $_GET['utm_medium']; echo $utm_medium; ?>">
-						<input type="hidden" name="utm_campaign" value="<?php $utm_campaign = $_GET['utm_campaign']; echo $utm_campaign; ?>">
-						<input type="hidden" name="utm_term" value="<?php $utm_term = $_GET['utm_term']; echo $utm_term; ?>">
-						<div class="uk-margin uk-text-center">
-							<button class="uk-form-width-1-1 uk-button uk-button-large uk-button-primary">Отправить заявку</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
+		<div id="leacli-modal-form"></div>
 
-		<div id="offcanvas-reveal" uk-offcanvas="mode: reveal; flip: true">
-			<div class="uk-offcanvas-bar uk-flex uk-flex-column uk-text-center">
-				<button class="uk-offcanvas-close uk-close-large" type="button" uk-close uk-toggle="cls: uk-close-large; mode: media; media: @s"></button>
-				<ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical" uk-nav>
-					<li><a href="#cases">Кейсы</a></li>
-					<li><a href="#strategy">Стратегия</a></li>
-					<li><a href="#modal-menu" uk-toggle>Услуги</a></li>
-					<li><a href="#special">Акции</a></li>
-					<li><a href="#contact">Контакты</a></li>
-				</ul>
-				<!--div>
-					<a class="language-switch">
-						<span class="language-option">
-							<img src="/img/components/globe.svg">
-							RU
-						</span>
-						<span class="language-selected">EN</span>
-					</a>
-				</div-->
-			</div>
-		</div>
+		<div id="leacli-mobile-menu"></div>
 		<a href="https://api.whatsapp.com/send/?phone=996553555255&amp;text=Здравствуйте, хочу заказать рекламу в Google" target="_blank" title="Написать в Whatsapp" rel="noopener noreferrer">
 			<div class="wa-button"></div>
 		</a>
@@ -876,5 +828,6 @@
 		</script>
 
 
+	<script src="/js/components.js"></script>
 	</body>
 </html>

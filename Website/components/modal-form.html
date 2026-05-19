@@ -1,0 +1,29 @@
+<div id="modal-form" class="uk-flex-top" uk-modal>
+			<div class="uk-modal-dialog uk-margin-auto-vertical uk-modal-body">
+				<button class="uk-modal-close-default" type="button" uk-close></button>
+				<div class="uk-margin-medium-top">
+					<form id="contact-form">
+						<div class="uk-margin">
+							<div class="uk-inline uk-width-1-1">
+								<span class="uk-form-icon">
+									<img src="/img/icons/user.svg">
+								</span>
+								<input class="uk-input uk-form-large uk-border-rounded" type="text" name="name" placeholder="Имя" aria-label="Ваше имя" required>
+							</div>
+						</div>
+						<div class="uk-margin">
+							<input class="uk-input uk-form-large uk-border-rounded" type="tel" name="phone" id="phone" aria-label="Номер телефона" required>
+							<p id="message" class="invnumber"></p>
+						</div>
+						<input type="hidden" name="request" value="Модалка">
+						<input type="hidden" name="utm_source" value="<?php $utm_source = $_GET['utm_source']; echo $utm_source; ?>">
+						<input type="hidden" name="utm_medium" value="<?php $utm_medium = $_GET['utm_medium']; echo $utm_medium; ?>">
+						<input type="hidden" name="utm_campaign" value="<?php $utm_campaign = $_GET['utm_campaign']; echo $utm_campaign; ?>">
+						<input type="hidden" name="utm_term" value="<?php $utm_term = $_GET['utm_term']; echo $utm_term; ?>">
+						<div class="uk-margin uk-text-center">
+							<button class="uk-form-width-1-1 uk-button uk-button-large uk-button-primary">Отправить заявку</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
