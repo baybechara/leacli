@@ -568,6 +568,12 @@ img.services-team-card-img {
     overflow: hidden;
 }
 
+.quiz-step-locked {
+    opacity: 0.55;
+    pointer-events: none;
+    user-select: none;
+}
+
 .quiz-step-icon {
     display: inline-flex;
     align-items: center;

@@ -808,6 +808,25 @@ Google Ads должен приносить прибыль,<br class="uk-visible@
 							});
 						}
 						
+						// Функция обновления заблокированных шагов
+						function updateLockedStates() {
+							quizSteps.forEach((step, index) => {
+								if (index === 0) {
+									step.classList.remove('quiz-step-locked');
+								} else {
+									const prevStep = quizSteps[index - 1];
+									if (prevStep.classList.contains('completed')) {
+										step.classList.remove('quiz-step-locked');
+									} else {
+										step.classList.add('quiz-step-locked');
+									}
+								}
+							});
+						}
+
+						// Инициализируем заблокированные шаги при старте
+						updateLockedStates();
+						
 						// Функция перехода к следующему шагу
 						function goToNextStep(currentIndex) {
 							if (currentIndex < quizSteps.length - 1) {
@@ -825,6 +844,8 @@ Google Ads должен приносить прибыль,<br class="uk-visible@
 								radio.addEventListener('change', function() {
 									// Помечаем шаг пройденным (загорается зеленая галочка)
 									step.classList.add('completed');
+									// Разблокируем следующий шаг
+									updateLockedStates();
 									// Переходим к следующему
 									goToNextStep(index);
 								});
