@@ -890,106 +890,121 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.5/js/intlTelInput.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.5/js/utils.min.js"></script>
 		<script>
-		const phone = document.querySelector("#phone");
-		const form = document.querySelector("#contact-form");
-		const message = document.querySelector("#message");
-		const phone1 = document.querySelector("#phone1");
-		const form1 = document.querySelector("#contact-form1");
-		const message1 = document.querySelector("#message1");
-		const phone2 = document.querySelector("#phone2");
-		const form2 = document.querySelector("#contact-form2");
-		const message2 = document.querySelector("#message2");
+		document.addEventListener('componentsLoaded', function() {
+			const phone = document.querySelector("#phone");
+			const form = document.querySelector("#contact-form");
+			const message = document.querySelector("#message");
+			
+			if (phone && form) {
+				const iti = window.intlTelInput(phone, {
+					initialCountry: "auto",
+					hiddenInput: "full_phone",
+					nationalMode: true,
+					preferredCountries: ["kg","kz","uz","ge","ae","es","de","gb","us","ca","pl","ru"],
+					geoIpLookup: callback => {
+						fetch("https://ipapi.co/json")
+						.then(res => res.json())
+						.then(data => callback(data.country_code))
+						.catch(() => callback("us"));
+					}
+				});
 
-		const iti = window.intlTelInput(phone, {
-		initialCountry: "auto",
-		hiddenInput: "full_phone",
-		nationalMode: true,
-		preferredCountries: ["kg","kz","uz","ge","ae","es","de","gb","us","ca","pl","ru"],
-		geoIpLookup: callback => {
-			fetch("https://ipapi.co/json")
-			.then(res => res.json())
-			.then(data => callback(data.country_code))
-			.catch(() => callback("us"));
-		}
+				form.onsubmit = (e) => {
+					e.preventDefault();
+					if (!iti.isValidNumber()) {
+						message.innerHTML = "Неправильный номер, попробуйте ещё раз.";
+						message.style.display = 'block';
+						return false;
+					}
+					else {
+						form.action = 'php/contact.php';
+						form.method = 'post';
+						document.getElementById("contact-form").submit();
+						window.location.href = "/thank-you.html";
+					}
+				};
+
+				phone.onfocus = () => {
+					message.style.display = 'none';
+				};
+			}
+
+			const phone1 = document.querySelector("#phone1");
+			const form1 = document.querySelector("#contact-form1");
+			const message1 = document.querySelector("#message1");
+
+			if (phone1 && form1) {
+				const iti1 = window.intlTelInput(phone1, {
+					initialCountry: "auto",
+					hiddenInput: "full_phone",
+					nationalMode: true,
+					preferredCountries: ["kg","kz","uz","ge","ae","es","de","gb","us","ca","pl","ru"],
+					geoIpLookup: callback => {
+						fetch("https://ipapi.co/json")
+						.then(res => res.json())
+						.then(data => callback(data.country_code))
+						.catch(() => callback("us"));
+					}
+				});
+
+				form1.onsubmit = (e) => {
+					e.preventDefault();
+					if (!iti1.isValidNumber()) {
+						message1.innerHTML = "Неправильный номер, попробуйте ещё раз.";
+						message1.style.display = 'block';
+						return false;
+					}
+					else {
+						form1.action = 'php/contact.php';
+						form1.method = 'post';
+						document.getElementById("contact-form1").submit();
+						window.location.href = "/thank-you.html";
+					}
+				};
+
+				phone1.onfocus = () => {
+					message1.style.display = 'none';
+				};
+			}
+
+			const phone2 = document.querySelector("#phone2");
+			const form2 = document.querySelector("#contact-form2");
+			const message2 = document.querySelector("#message2");
+
+			if (phone2 && form2) {
+				const iti2 = window.intlTelInput(phone2, {
+					initialCountry: "auto",
+					hiddenInput: "full_phone",
+					nationalMode: true,
+					preferredCountries: ["kg","kz","uz","ge","ae","es","de","gb","us","ca","pl","ru"],
+					geoIpLookup: callback => {
+						fetch("https://ipapi.co/json")
+						.then(res => res.json())
+						.then(data => callback(data.country_code))
+						.catch(() => callback("us"));
+					}
+				});
+
+				form2.onsubmit = (e) => {
+					e.preventDefault();
+					if (!iti2.isValidNumber()) {
+						message2.innerHTML = "Неправильный номер, попробуйте ещё раз.";
+						message2.style.display = 'block';
+						return false;
+					}
+					else {
+						form2.action = 'php/contact.php';
+						form2.method = 'post';
+						document.getElementById("contact-form2").submit();
+						window.location.href = "/thank-you.html";
+					}
+				};
+
+				phone2.onfocus = () => {
+					message2.style.display = 'none';
+				};
+			}
 		});
-
-		form.onsubmit = () => {
-		if (!iti.isValidNumber()) {
-			message.innerHTML = "Неправильный номер, попробуйте ещё раз.";
-			message.style.display = 'block';
-			return false;
-		}
-		else {
-			form.action = 'php/contact.php';
-			form.method = 'post';
-			document.getElementById("contact-form").submit();
-			window.location.href = "/thank-you.html";
-		}
-		};
-
-		const iti1 = window.intlTelInput(phone1, {
-		initialCountry: "auto",
-		hiddenInput: "full_phone",
-		nationalMode: true,
-		preferredCountries: ["kg","kz","uz","ge","ae","es","de","gb","us","ca","pl","ru"],
-		geoIpLookup: callback => {
-			fetch("https://ipapi.co/json")
-			.then(res => res.json())
-			.then(data => callback(data.country_code))
-			.catch(() => callback("us"));
-		}
-		});
-
-		form1.onsubmit = () => {
-		if (!iti1.isValidNumber()) {
-			message1.innerHTML = "Неправильный номер, попробуйте ещё раз.";
-			message1.style.display = 'block';
-			return false;
-		}
-		else {
-			form1.action = 'php/contact.php';
-			form1.method = 'post';
-			document.getElementById("contact-form1").submit();
-			window.location.href = "/thank-you.html";
-		}
-		};
-
-		const iti2 = window.intlTelInput(phone2, {
-		initialCountry: "auto",
-		hiddenInput: "full_phone",
-		nationalMode: true,
-		preferredCountries: ["kg","kz","uz","ge","ae","es","de","gb","us","ca","pl","ru"],
-		geoIpLookup: callback => {
-			fetch("https://ipapi.co/json")
-			.then(res => res.json())
-			.then(data => callback(data.country_code))
-			.catch(() => callback("us"));
-		}
-		});
-
-		form2.onsubmit = () => {
-		if (!iti2.isValidNumber()) {
-			message2.innerHTML = "Неправильный номер, попробуйте ещё раз.";
-			message2.style.display = 'block';
-			return false;
-		}
-		else {
-			form2.action = 'php/contact.php';
-			form2.method = 'post';
-			document.getElementById("contact-form2").submit();
-			window.location.href = "/thank-you.html";
-		}
-		};
-
-		phone.onfocus = () => {
-			message.style.display = 'none';
-		};
-		phone1.onfocus = () => {
-			message1.style.display = 'none';
-		};
-		phone2.onfocus = () => {
-			message2.style.display = 'none';
-		};
 		</script>
 	<script src="/js/components.js"></script>
 	</body>
