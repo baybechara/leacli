@@ -756,15 +756,15 @@ Google Ads должен приносить прибыль,<br class="uk-visible@
 												</div>
 											</div>
 											<div class="uk-width-1-2@m">
-												<div class="uk-inline uk-width-1-1">
-													<span class="uk-form-icon" uk-icon="icon: whatsapp"></span>
-													<input class="uk-input uk-form-large quiz-input" type="tel" name="phone" placeholder="Номер WhatsApp" required>
+												<div class="uk-width-1-1">
+													<input class="uk-input uk-form-large quiz-input" type="tel" name="phone" id="quiz-phone" placeholder="Номер WhatsApp" required>
+													<p id="quiz-phone-message" class="invnumber" style="display: none; color: #f0506e; font-size: 13px; margin: 5px 0 0 10px;"></p>
 												</div>
 											</div>
 											<div class="uk-width-1-1">
 												<div class="uk-inline uk-width-1-1">
 													<span class="uk-form-icon" uk-icon="icon: link"></span>
-													<input class="uk-input uk-form-large quiz-input" type="url" name="website" placeholder="Ссылка на сайт (если есть)">
+													<input class="uk-input uk-form-large quiz-input" type="url" name="website" placeholder="Ссылка на ваш сайт" required>
 												</div>
 											</div>
 											<div class="uk-width-1-1 uk-text-center uk-margin-top">
@@ -783,6 +783,30 @@ Google Ads должен приносить прибыль,<br class="uk-visible@
 						if (!quizAccordion) return;
 						
 						const quizSteps = quizAccordion.querySelectorAll('.quiz-step');
+						
+						// Инициализация intl-tel-input для квиза
+						const quizPhone = document.getElementById('quiz-phone');
+						const quizPhoneMessage = document.getElementById('quiz-phone-message');
+						let itiQuiz = null;
+						
+						if (quizPhone && window.intlTelInput) {
+							itiQuiz = window.intlTelInput(quizPhone, {
+								initialCountry: "auto",
+								hiddenInput: "full_phone",
+								nationalMode: true,
+								preferredCountries: ["kg","kz","uz","ge","ae","es","de","gb","us","ca","pl","ru"],
+								geoIpLookup: callback => {
+									fetch("https://ipapi.co/json")
+									.then(res => res.json())
+									.then(data => callback(data.country_code))
+									.catch(() => callback("us"));
+								}
+							});
+							
+							quizPhone.addEventListener('focus', function() {
+								quizPhoneMessage.style.display = 'none';
+							});
+						}
 						
 						// Функция перехода к следующему шагу
 						function goToNextStep(currentIndex) {
@@ -812,6 +836,13 @@ Google Ads должен приносить прибыль,<br class="uk-visible@
 						if (quizForm) {
 							quizForm.onsubmit = function(e) {
 								e.preventDefault(); // Останавливаем стандартную перезагрузку страницы
+								
+								// Валидация телефона
+								if (itiQuiz && !itiQuiz.isValidNumber()) {
+									quizPhoneMessage.innerHTML = "Неправильный номер, попробуйте ещё раз.";
+									quizPhoneMessage.style.display = 'block';
+									return false;
+								}
 								
 								// Собираем все данные формы (включая шаги квиза)
 								const formData = new FormData(quizForm);
