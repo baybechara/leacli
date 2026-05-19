@@ -1403,6 +1403,7 @@ span.badge-gift img {
 	width: 70px !important;
 	display: block;
 	animation: googlePartnerFloat 6s ease-in-out infinite;
+	border-radius: 0;
 }
 .google-partner-badge:hover {
 	transform: scale(1.08) rotate(-2deg);
