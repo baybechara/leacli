@@ -483,8 +483,9 @@ img.services-team-card-img {
   justify-content: center;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-  width: 90px;
-  height: 90px;
+
+    width: 70px;
+    height: 70px;
   box-sizing: border-box;
 }
 
