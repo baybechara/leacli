@@ -575,8 +575,8 @@ img.services-team-card-img {
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background-color: #f0f0f0;
-    color: #666;
+    background-color: #1c1b1f; /* Dark background */
+    color: #ffffff; /* White text */
     font-size: 14px;
     margin-right: 15px;
     font-weight: bold;
@@ -664,14 +664,12 @@ img.services-team-card-img {
     border-radius: 50px !important;
     background: #ffffff;
     border: 1px solid #e5e5e5;
-    text-align: left; /* Left align for intlTelInput flags */
-    padding-left: 55px !important; /* Add padding for flag */
+    text-align: left !important; /* Left align text in all inputs */
 }
 
-/* Normal inputs without flags can be centered */
-.quiz-input:not([type="tel"]) {
-    text-align: center;
-    padding-left: 20px !important;
+/* Add padding specifically to the phone input for the country flag */
+#quiz-phone {
+    padding-left: 55px !important;
 }
 
 .quiz-input:focus {
