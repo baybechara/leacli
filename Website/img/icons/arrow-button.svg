@@ -1,0 +1,13 @@
+<svg class="pixel-arrow" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="52" height="52" rx="12" fill="#FF8222"/>
+  <path class="pixel" d="M15.7083 13H20.0416V17.3333H15.7083V13Z" fill="white"/>
+  <path class="pixel" d="M15.7083 39H20.0416V34.6667H15.7083V39Z" fill="white"/>
+  <path class="pixel" d="M21.1251 13H25.4584V17.3333H21.1251V13Z" fill="white"/>
+  <path class="pixel" d="M21.1251 39H25.4584V34.6667H21.1251V39Z" fill="white"/>
+  <path class="pixel" d="M21.1251 18.4166H25.4584V22.7499H21.1251V18.4166Z" fill="white"/>
+  <path class="pixel" d="M21.1251 33.5834H25.4584V29.2501H21.1251V33.5834Z" fill="white"/>
+  <path class="pixel" d="M26.5414 18.4166H30.8747V22.7499H26.5414V18.4166Z" fill="white"/>
+  <path class="pixel" d="M26.5414 33.5834H30.8747V29.2501H26.5414V33.5834Z" fill="white"/>
+  <path class="pixel" d="M26.5414 23.8334H30.8747V28.1668H26.5414V23.8334Z" fill="white"/>
+  <path class="pixel" d="M31.9583 23.8334H36.2916V28.1668H31.9583V23.8334Z" fill="white"/>
+</svg>
