@@ -1388,3 +1388,27 @@ span.badge-gift img {
 	background-color: #1c1b1f;
 	border-radius: 50px;
 }
+
+.google-partner-badge {
+	background: white;
+	padding: 6px 10px;
+	border-radius: 8px;
+	box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+	margin-top: 15px !important;
+	margin-left: 15px !important;
+}
+.google-partner-badge img {
+	width: 70px !important;
+}
+
+@media (min-width: 960px) {
+	.google-partner-badge {
+		padding: 15px;
+		margin-top: 40px !important;
+		margin-left: 40px !important;
+	}
+	.google-partner-badge img {
+		width: 100px !important;
+	}
+}
+
