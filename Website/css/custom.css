@@ -1390,20 +1390,39 @@ span.badge-gift img {
 }
 
 .google-partner-badge {
-	background: white;
-	padding: 6px 10px;
-	border-radius: 8px;
-	box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+	background: transparent;
+	padding: 0;
+	border-radius: 0;
+	box-shadow: none;
+	filter: drop-shadow(0 4px 15px rgba(0,0,0,0.15));
 	margin-top: 15px !important;
 	margin-left: 15px !important;
+	transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), filter 0.4s ease;
 }
 .google-partner-badge img {
 	width: 70px !important;
+	display: block;
+	animation: googlePartnerFloat 6s ease-in-out infinite;
+}
+.google-partner-badge:hover {
+	transform: scale(1.08) rotate(-2deg);
+	filter: drop-shadow(0 12px 25px rgba(66, 133, 244, 0.35)); /* Blue-ish Google glow on hover */
+}
+
+@keyframes googlePartnerFloat {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-6px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
 }
 
 @media (min-width: 960px) {
 	.google-partner-badge {
-		padding: 15px;
 		margin-top: 40px !important;
 		margin-left: 40px !important;
 	}
