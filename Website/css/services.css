@@ -601,13 +601,17 @@ img.services-team-card-img {
     display: none !important;
 }
 
-.quiz-accordion .uk-accordion-title {
+.quiz-accordion .uk-accordion-title,
+.quiz-accordion .uk-open>.uk-accordion-title {
     display: flex;
     align-items: center;
     padding: 0 !important; /* removed padding since card has it */
     font-size: 1.1rem;
     color: #333;
     transition: color 0.2s;
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
 }
 
 .quiz-accordion .uk-accordion-content {
