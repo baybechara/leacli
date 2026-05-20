@@ -1254,26 +1254,28 @@ span.badge-gift img {
   padding: 0;
   list-style: none;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
 }
 .vf-bc__item{
   display: inline-flex;
-  align-items: center;
+  align-items: flex-start;
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.4;
   font-weight: 600;
   letter-spacing: .06em;
   text-transform: uppercase;
   color: var(--text);
+  flex: 0 0 auto;
 }
 
 
 .vf-bc__item + .vf-bc__item::before{
   content: "";
+  flex-shrink: 0;
   width: 10px;		   /* ширина треугольника */
   height: 10px;		  /* высота треугольника */
-  margin: 0 10px 0 0px;   /* отступы как на примере */
+  margin: 0.35em 10px 0 0px;   /* отступы как на примере */
   background: var(--sep);
   /* SVG-треугольник, который можно перекрашивать через background + mask */
   -webkit-mask: url('data:image/svg+xml;utf8,\
@@ -1293,15 +1295,26 @@ span.badge-gift img {
   transition: opacity .2s ease;
 }
 .vf-bc__link:hover{ opacity: .85; }
-.vf-bc__item[aria-current="page"]{
+.vf-bc__item:last-child{
   color: var(--active);
+  flex: 1 1 0%;
+  min-width: 0;
 }
 
 
 @media (max-width:480px){
-  .vf-bc{ padding: 12px 16px; }
-  .vf-bc__list{ gap: 8px; }
-  .vf-bc__item{ font-size: 12px; }
+  .vf-bc{ padding: 12px 16px;         margin-top: -40px;}
+  .vf-bc__list{ gap: 8px; flex-wrap: wrap; 
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;}
+  .vf-bc__item{ font-size: 12px; 
+    display: flex;
+    align-items: flex-start;}
+  .vf-bc__item:last-child{
+    width: 100%;
+    margin-top: 4px;
+  }
 }
 
 
