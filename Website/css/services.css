@@ -93,6 +93,10 @@
   background: #F9F9F9;
   border-radius: 20px; 
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .underservices-title {
@@ -507,6 +511,10 @@ img.services-team-card-img {
 }
 
 @media (max-width: 768px) {
+
+  .services-main-body {
+    padding: 40px 0px 0px 0px;
+  }
 
   .tech-card {
     width: 75px;

@@ -1248,72 +1248,44 @@ span.badge-gift img {
 	padding: 0px;
 }
 
-
-.vf-bc__list{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-}
-.vf-bc__item{
-  display: inline-flex;
-  align-items: flex-start;
+.vf-bc__link,
+.vf-bc__text {
+  color: var(--text);
   font-size: 14px;
   line-height: 1.4;
   font-weight: 600;
   letter-spacing: .06em;
   text-transform: uppercase;
-  color: var(--text);
-  flex: 0 0 auto;
+  display: inline;
+  vertical-align: middle;
 }
 
-
-.vf-bc__item + .vf-bc__item::before{
-  content: "";
-  flex-shrink: 0;
-  width: 10px;		   /* ширина треугольника */
-  height: 10px;		  /* высота треугольника */
-  margin: 0.35em 10px 0 0px;   /* отступы как на примере */
-  background: var(--sep);
-  /* SVG-треугольник, который можно перекрашивать через background + mask */
-  -webkit-mask: url('data:image/svg+xml;utf8,\
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10" preserveAspectRatio="xMidYMid meet">\
-	  <polygon points="0,0 6,5 0,10" />\
-	</svg>') no-repeat center / contain;
-		  mask: url('data:image/svg+xml;utf8,\
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10" preserveAspectRatio="xMidYMid meet">\
-	  <polygon points="0,0 6,5 0,10" />\
-	</svg>') no-repeat center / contain;
-}
-
-
-.vf-bc__link{
-  color: var(--text);
+.vf-bc__link {
   text-decoration: none;
   transition: opacity .2s ease;
 }
-.vf-bc__link:hover{ opacity: .85; }
-.vf-bc__item:last-child{
+.vf-bc__link:hover { opacity: .85; }
+
+.vf-bc__text {
   color: var(--active);
-  flex: 1 1 0%;
-  min-width: 0;
 }
 
+.vf-bc__sep {
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 10px;
+  margin: 0 10px;
+  background: var(--sep);
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10" preserveAspectRatio="xMidYMid meet"><polygon points="0,0 6,5 0,10" /></svg>') no-repeat center / contain;
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10" preserveAspectRatio="xMidYMid meet"><polygon points="0,0 6,5 0,10" /></svg>') no-repeat center / contain;
+}
 
 @media (max-width:480px){
-  .vf-bc{ padding: 12px 16px;         margin-top: -40px;}
-  .vf-bc__list{ gap: 8px; flex-wrap: wrap; 
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;}
-  .vf-bc__item{ font-size: 12px; 
-    display: flex;
-    align-items: flex-start;}
-  .vf-bc__item:last-child{
-    width: 100%;
-    margin-top: 4px;
+  .vf-bc { padding: 12px 16px; margin-top: -40px; }
+  .vf-bc__link,
+  .vf-bc__text {
+    font-size: 12px;
   }
 }
 
