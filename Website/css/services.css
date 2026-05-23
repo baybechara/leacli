@@ -452,8 +452,10 @@ img.services-team-card-img {
 }
 
 .stage-badge {
-  display: inline-block;
-  padding: 6px 14px;
+  display: block;
+  text-align: center;
+  padding: 6px 10px;
+  white-space: nowrap;
   border-radius: 20px;
   border: 2px solid transparent;
   transition: all 0.25s ease;
