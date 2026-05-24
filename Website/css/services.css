@@ -60,6 +60,10 @@
   border-bottom: none;
 }
 
+.soft-hr-r {
+  transform: scaleX(-1);
+}
+
 .vf-item__text {
 	font-size: 18px;
 	font-weight: 500;
