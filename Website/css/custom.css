@@ -36,11 +36,11 @@ body {
 	cursor: pointer;
 }
 
-a.mob-header-logo {
+a.leacli-header__mob-logo {
 	display: block;
 	width: 130px;
 }
-.mob-header {
+.leacli-header__mob {
 	background-color: rgba(35, 35, 40, 0.7);
 	backdrop-filter: blur(15px);
 	-webkit-backdrop-filter: blur(15px);
@@ -71,14 +71,14 @@ a.mob-header-logo {
 	display: flex;
 	align-items: center;
 }
-nav.navbar {
+nav.leacli-header__nav {
 	background-color: rgba(35, 35, 40, 0.7);
 	backdrop-filter: blur(15px);
 	-webkit-backdrop-filter: blur(15px);
 	padding: 3px 5px;
 	border-radius: 40px;
 }
-nav.navbar a {
+nav.leacli-header__nav a {
 	color: #fff;
 	font-weight: 600;
 	display: block;
@@ -86,23 +86,23 @@ nav.navbar a {
 	border-radius: 20px;
 	transition: all 1s ease-out;
 }
-nav.navbar a:hover {
+nav.leacli-header__nav a:hover {
 	background-color: #1C1C20;
 	text-decoration: none;
 }
-a.logo {
+a.leacli-header__logo {
 	width: 122px;
 	display: block;
 }
 
-.contactbar {
+.leacli-header__contactbar {
 	background-color: rgba(35, 35, 40, 0.7);
 	backdrop-filter: blur(15px);
 	-webkit-backdrop-filter: blur(15px);
 	padding: 8px 12px;
 	border-radius: 40px;
 }
-a.lang {
+a.leacli-header__lang {
 	display: block;
 	background-color: rgba(255, 255, 255, 0.1);
 	backdrop-filter: blur(15px);
@@ -332,11 +332,11 @@ span.text-hero {
 	margin-right: 16px;
 	font-size: 20px;
 }
-.astronaut img {
+.leacli-header__astronaut img {
 	width: 42px;
 	margin-right: 10px;
 }
-.astronaut {
+.leacli-header__astronaut {
   animation: float 6s ease-in-out infinite;
   display: inline-block;
 }
@@ -541,12 +541,12 @@ a.service-card.service-card-main {
 	border: 1.5px dashed #C4C4C4;
 	margin: 10px 0px;
 }
-.cta {
+.leacli-cta {
 	padding: 50px 0;
 	background: #1c1b1f;
 	border-radius: 40px 40px 0 0;
 }
-.icons-cta {
+.leacli-cta__icon {
 	width: 50px;
 	animation: iconsctapulse 1s infinite alternate;
 }
@@ -560,7 +560,7 @@ a.service-card.service-card-main {
 	opacity: 1;
   }
 }
-.circlebg {
+.leacli-cta__circlebg {
 	height: 140px;
 	width: 140px;
 	margin: 0 auto;
@@ -571,7 +571,7 @@ a.service-card.service-card-main {
 	from{ transform: rotate(-360deg); }
 	to{ transform: rotate(360deg); }
 }
-.sscc {
+.leacli-cta__sscc {
 	height: 140px;
 	width: 140px;
 	margin: 0 auto;
@@ -595,21 +595,21 @@ footer {
 	padding: 50px 30px 30px 30px;
 	border-radius: 30px;
 }
-.leacli-logo {
+.leacli-footer__logo {
 	margin-bottom: 30px;
 	display: block;
 	width: 140px;
 }
-.leacli-contact-list a {
+.leacli-footer__contact-list a {
 	color: #ccc;
 	text-decoration: none;
 	display: block;
 	padding: 5px 0;
 }
-.leacli-contact-list a:hover {
+.leacli-footer__contact-list a:hover {
 	color: #fff;
 }
-.leacli-phone {
+.leacli-footer__phone {
 	display: block;
 	background: #292930;
 	padding: 10px 20px;
@@ -620,38 +620,38 @@ footer {
   transition: all 1s ease-out;
 }
 
-.leacli-phone:hover {
+.leacli-footer__phone:hover {
 	background: #ffffff;
 	text-decoration: none;
 	color: #292930;
 }
-.leacli-footer-cta {
+.leacli-footer__cta {
 	background: #27272D;
 	padding: 20px 20px;
 	border-radius: 30px;
 }
-.leacli-legal-info {
+.leacli-footer__legal-info {
 	color: #999;
 	font-size: 0.9em;
 }
-.leacli-section-list {
+.leacli-footer__list {
 	margin-top: 0px;
 }
-.leacli-section-title {
+.leacli-footer__title {
 	color: #ddd;
 	margin-bottom: 15px;
 	letter-spacing: 2px;
 }
-.leacli-section-list a {
+.leacli-footer__list a {
 	color: #bbb;
 	text-decoration: none;
 	display: block;
 	padding: 3px 0;
 }
-.leacli-section-list a:hover {
+.leacli-footer__list a:hover {
 	color: #fff;
 }
-.leacli-section-list>:nth-child(n+2) {
+.leacli-footer__list>:nth-child(n+2) {
 	margin-top: 0;
 }
 
@@ -683,24 +683,24 @@ footer {
 .leacli-button-primary:hover {
 	background-color: #0056b3;
 }
-.leacli-bottom {
+.leacli-footer__bottom {
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
-.leacli-copyright {
+.leacli-footer__copyright {
 	color: #777;
 	font-size: 0.85em;
 }
-.leacli-bottom-links a {
+.leacli-footer__bottom-links a {
 	color: #999;
 	text-decoration: none;
 	margin-left: 15px;
 	font-size: 0.85em;
 }
-.leacli-bottom-links a:hover {
+.leacli-footer__bottom-links a:hover {
 	color: #fff;
 }
-.leacli-made-with-love {
+.leacli-footer__made-with-love {
 	color: #ffffff;
 	font-size: 0.85em;
 }
@@ -708,7 +708,7 @@ footer {
 	background: #F0F0F0;
 	border-radius: 25px;
 }
-.leacli-modal-list a {
+.leacli-modal__list a {
 	color: #1C1C20;
 }
 .uk-modal-container .uk-modal-dialog {
@@ -965,10 +965,10 @@ span.text-hero {
 	padding: 20px 10px 10px 10px;
 	border-radius: 20px;
 }
-.leacli-section-footer-menu {
+.leacli-footer__menu {
 	padding: 0 20px;
 }
-.leacli-footer-cta {
+.leacli-footer__cta {
 	background: #27272D;
 	padding: 15px 15px;
 	border-radius: 14px;
@@ -998,7 +998,7 @@ a.service-card.service-card-main {
 	margin-top: -20px;
 	border-radius: 20px 20px;
 }
-.cta {
+.leacli-cta {
 	padding: 40px 0;
 	background: #1c1b1f;
 	border-radius: 30px 30px 0 0;
@@ -1095,7 +1095,7 @@ h2.uk-heading-small {
 #process {
 	margin: 20px 0px 0px 0px;
 }
-.astronaut img {
+.leacli-header__astronaut img {
 	width: 40px;
 	margin-right: 0px;
 }

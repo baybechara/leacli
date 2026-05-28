@@ -54,69 +54,45 @@
 		<!-- End Meta Pixel Code -->
 	</head>
 	<body>
-		<section class="services-main-section uk-background-norepeat uk-background-top-center uk-background-cover" uk-parallax="bgx: -200" style="background-image: url('/img/services/development/bg.jpg');">
+		<section class="services-main-section bg-dark">
 			<div class="uk-container uk-container-large">
-				
 				<div id="leacli-header"></div>
+			</div>
 			<div class="uk-container">
 				<div class="services-main-body">
-					<div class="uk-grid-medium" uk-grid>
+					<!-- Хлебные крошки -->
+					<div class="vf-bc uk-margin-bottom" aria-label="Хлебные крошки">
+						<a class="vf-bc__link" href="#">ГЛАВНАЯ</a>
+						<span class="vf-bc__sep"></span>
+						<a class="vf-bc__link" href="#">УСЛУГИ</a>
+						<span class="vf-bc__sep"></span>
+						<a class="vf-bc__link" href="#">РАЗРАБОТКА</a>
+						<span class="vf-bc__sep"></span>
+						<span class="vf-bc__text" aria-current="page">РАЗРАБОТКА САЙТОВ</span>
+					</div>
+
+					<!-- Заголовок и подзаголовок -->
+					<div class="uk-grid-medium uk-margin-top uk-flex-middle" uk-grid>
 						<div class="uk-width-1-2@m">
-							<div class="vf-bc" aria-label="Хлебные крошки">
-							  <a class="vf-bc__link" href="#">УСЛУГИ</a>
-							  <span class="vf-bc__sep"></span>
-							  <a class="vf-bc__link" href="#">РАЗРАБОТКА</a>
-							  <span class="vf-bc__sep"></span>
-							  <span class="vf-bc__text" aria-current="page">Разработка сайтов</span>
-							</div> 
+							<h1 class="uk-h2 uk-text-bold text-white uk-margin-remove">Разработка Landing Page<br>с высокой конверсией</h1>
 						</div>
-						<div class="uk-width-1-2 uk-visible@m">
-						</div> 
-					</div>
-					<div class="uk-margin-medium-top">
-						<div class="uk-child-width-1-2@m" uk-grid>
-							<div>
-								<h1 class="uk-h2 uk-text-bold text-white">Интерфейсные решения<br>которые вовлекают</h1>  
-								<p class="text-bold text-white">От стратегии до технического исполнения — ознакомьтесь с нашими примерами, чтобы узнать о влиянии нашего агентства.</p>
-							</div>
-							<div>
-								<div class="calltoaction-block-form">
-									<div class="calltoaction-block-form-card uk-light">
-									<form id="contact-form1">
-										<div class="uk-grid-small" uk-grid>
-											<div class="uk-width-1-2@m">
-												<div class="uk-margin">
-													<div class="uk-inline">
-														<span class="uk-form-icon">
-															<img src="/img/icons/user.svg">
-														</span>
-														<input class="uk-input uk-form-width-medium uk-form-large uk-form-width-large border-rounded" type="text"  aria-label="Not clickable icon" name="name" placeholder="Ваше имя" required>
-													</div>
-												</div>
-											</div>
-											<div class="uk-width-1-2@m">
-												<div class="uk-margin">
-													<input class="uk-input uk-form-width-medium uk-form-large uk-form-width-large border-rounded" type="tel" name="phone" id="phone1" aria-label="Номер телефона" required>
-													<p id="message1" class="invnumber"></p>
-												</div>
-											</div>
-											<input type="hidden" name="request" value="Стратегия">
-											<input type="hidden" name="utm_source" value="<?php $utm_source = $_GET['utm_source']; echo $utm_source; ?>">
-											<input type="hidden" name="utm_medium" value="<?php $utm_medium = $_GET['utm_medium']; echo $utm_medium; ?>">
-											<input type="hidden" name="utm_campaign" value="<?php $utm_campaign = $_GET['utm_campaign']; echo $utm_campaign; ?>">
-											<input type="hidden" name="utm_term" value="<?php $utm_term = $_GET['utm_term']; echo $utm_term; ?>">
-											<div class="uk-width-1-1">
-												<div class="uk-margin">
-													<button class="uk-button uk-button-primary uk-button-large uk-width-1-1 border-rounded">Получить стратегию</button>
-												</div>
-											</div>
-										</div>
-									</form>
-									</div>
-								</div>
-							</div> 
+						<div class="uk-width-1-2@m">
+							<p class="text-white uk-text-large uk-margin-remove">Упаковываем ваш продукт в продающий дизайн. От маркетингового исследования и UX-прототипа до кастомной анимации и настройки аналитики.</p>
 						</div>
 					</div>
+					
+					<!-- Центральная картинка -->
+					<div class="uk-margin-large-top uk-text-center">
+						<img src="/img/services/development/landing/hero.png" alt="Интерфейсы">
+					</div>
+
+					<!-- Кнопка скролла вниз (опционально) -->
+					<div class="uk-text-center uk-margin-medium-top uk-margin-large-bottom">
+						<a href="#underservices1" uk-scroll class="uk-icon-button" style="background-color: #FF8222; color: #fff; width: 60px; height: 60px;">
+							<span uk-icon="icon: chevron-down; ratio: 2"></span>
+						</a>
+					</div>
+
 				</div> 
 			</div> 
 		</section>
@@ -130,35 +106,35 @@
 					<div class="uk-margin-medium-top">
 						<div class="uk-grid-medium uk-child-width-1-3@m uk-grid-match" uk-grid>
 							<div>
-								<div class="underservices-card">
+								<div class="underservices-card uk-height-1-1">
 								  <div class="uk-margin-bottom">
-									<img src="/img/services/main/design.jpg" alt="Заказать дизайн сайта под ключ" class="border-rounded">
+									<img src="/img/services/main/design.jpg" alt="Mobile-First подход" class="border-rounded">
 								  </div>
-								  <h3 class="underservices-title">Привлечение потенциальных клиентов</h3>
+								  <h3 class="underservices-title">Mobile-First подход</h3>
 								  <p class="underservices-text">
-									90% бизнеса в России представлено в интернете, ежедневно совершается 340 млн онлайн-заказов
+									Более 80% трафика приходит со смартфонов. Ваш лендинг будет идеально смотреться, читаться и быстро работать на любых мобильных устройствах.
 								  </p>
 								</div>
 							</div>
 							<div>
-								<div class="underservices-card">
+								<div class="underservices-card uk-height-1-1">
 								  <div class="uk-margin-bottom">
-									<img src="/img/services/main/development.jpg" alt="Заказать дизайн сайта под ключ" class="border-rounded">
+									<img src="/img/services/main/development.jpg" alt="Зеленая зона PageSpeed" class="border-rounded">
 								  </div>
-								  <h3 class="underservices-title">Рост продаж и прибыли</h3>
+								  <h3 class="underservices-title">Зеленая зона PageSpeed</h3>
 								  <p class="underservices-text">
-									Контроль за главным инструментом продаж и позиционирования
+									Мгновенная загрузка страниц без потери качества анимаций. Снижаем показатель отказов и делаем сайт привлекательным для Google.
 								  </p>
 								</div>
 							</div>
 							<div>
-								<div class="underservices-card">
+								<div class="underservices-card uk-height-1-1">
 								  <div class="uk-margin-bottom">
-									<img src="/img/services/main/marketing.jpg" alt="Заказать дизайн сайта под ключ" class="border-rounded">
+									<img src="/img/services/main/marketing.jpg" alt="Интеграция аналитики" class="border-rounded">
 								  </div>
-								  <h3 class="underservices-title">Повышение узнаваемости и лояльностик бренду</h3>
+								  <h3 class="underservices-title">Интеграция аналитики</h3>
 								  <p class="underservices-text">
-									Формирование голоса бренда
+									Сразу подключаем GTM, Пиксели и настраиваем цели в GA4. Сайт полностью готов к приему платного трафика с первого дня.
 								  </p>
 								</div>
 							</div> 
@@ -173,7 +149,7 @@
 
 		<section class="dark-section">
 			<div class="uk-container">
-				<h2 class="text-white uk-text-center uk-text-uppercase uk-text-bold uk-margin-top">Мы объединяем ваши идеи с нашим опытом,<br class="uk-visible@m"> чтобы создать приятный пользовательский опыт</h2>
+				<h2 class="text-white uk-text-center uk-text-uppercase uk-text-bold uk-margin-top">Упаковываем смыслы в премиальный дизайн,<br class="uk-visible@m"> чтобы ваш лендинг продавал 24/7</h2>
 				<div class="uk-text-center">
 					<a href="#modal-form" uk-toggle="" class="uk-button uk-button-primary uk-button-large border-rounded pulse" role="button">Начать сегодня</a>
 				</div>
@@ -336,33 +312,46 @@
 
 				<div class="under-services-body">
 					<div class="under-services-title">
-						<h2 class="uk-h2 uk-text-bold uk-margin-top uk-text-center">Наш Процесс разработки Frontend</h2>
+						<h2 class="uk-h2 uk-text-bold uk-margin-top uk-text-center">Процесс создания Landing Page</h2>
 					</div> 
 					<div class="uk-margin-medium-top">
 						<div uk-grid>
 							<div class="uk-width-auto@m">
 								<ul class="uk-tab-left" uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
-									<li><a href="#"><img src="/img/services/development/icons/wh/1.svg" alt="" width="24" class="uk-margin-small-right"> Исследования</a></li>
-									<li><a href="#"><img src="/img/services/development/icons/wh/1.svg" alt="" width="24" class="uk-margin-small-right"> Создание прототипов</a></li>
-									<li><a href="#"><img src="/img/services/development/icons/wh/1.svg" alt="" width="24" class="uk-margin-small-right"> Выбор Стека</a></li>
-									<li><a href="#"><img src="/img/services/development/icons/wh/1.svg" alt="" width="24" class="uk-margin-small-right"> Дизайн UI / UX</a></li>
-									<li><a href="#"><img src="/img/services/development/icons/wh/1.svg" alt="" width="24" class="uk-margin-small-right"> Контроль качества<br> и тестирование</a></li>
+									<li><a href="#"><img src="/img/services/development/icons/1.svg" alt="" width="24" class="uk-margin-small-right"> БРИФИНГ И АНАЛИЗ</a></li>
+									<li><a href="#"><img src="/img/services/development/icons/2.svg" alt="" width="24" class="uk-margin-small-right"> ПРОЕКТИРОВАНИЕ (UX)</a></li>
+									<li><a href="#"><img src="/img/services/development/icons/3.svg" alt="" width="24" class="uk-margin-small-right"> ДИЗАЙН (UI)</a></li>
+									<li><a href="#"><img src="/img/services/development/icons/4.svg" alt="" width="24" class="uk-margin-small-right"> ВЕРСТКА И КОД</a></li>
+									<li><a href="#"><img src="/img/services/development/icons/5.svg" alt="" width="24" class="uk-margin-small-right"> ЗАПУСК И АНАЛИТИКА</a></li>
 								</ul>
 							</div>
 							<div class="uk-width-expand@m">
 								<div id="component-tab-left" class="uk-switcher">
 									<div>
 										<div class="uk-padding uk-padding-remove-vertical">
-											<p>Прежде чем приступать к разработке, крайне важно проверить идею продукта с помощью исследований, оценить целесообразность, затраты, риски, целевой рынок, масштаб проекта и потребности в ресурсах, а также выбрать подходящие технологии.</p>
-											<p>Мы начинаем с подписания NDA для защиты данных, затем собираем и анализируем информацию о проекте, создаём макеты и прототипы. После завершения исследования команда разработчиков знает все тонкости проекта, включая его масштабы, целевую аудиторию, прибыль и риски.</p>
-											<div>
-												<img src="/img/services/development/site/tab.png">
-											</div>
+											<p>Сначала мы погружаемся в ваш бизнес: изучаем продукт, конкурентов и целевую аудиторию. Выявляем боли и потребности потенциальных клиентов, чтобы создать сильное ценностное предложение (УТП) и смысловую структуру посадочной страницы.</p>
 										</div>
 									</div>
-									<div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</div>
-									<div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</div>
-									<div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</div>
+									<div>
+										<div class="uk-padding uk-padding-remove-vertical">
+											<p>На основе анализа мы разрабатываем Wireframes (структурные прототипы). Продумываем логику повествования, блоки захвата внимания и путь пользователя к заявке. На этом этапе закладывается конверсионный фундамент лендинга.</p>
+										</div>
+									</div>
+									<div>
+										<div class="uk-padding uk-padding-remove-vertical">
+											<p>Отрисовываем премиальный и современный дизайн, который вызывает доверие. Используем стильную типографику, кастомные иллюстрации, правильную работу со свободным пространством и расставляем цветовые акценты на кнопках (Call to Action).</p>
+										</div>
+									</div>
+									<div>
+										<div class="uk-padding uk-padding-remove-vertical">
+											<p>Переносим дизайн в код с пиксельной точностью. Мы пишем чистый, оптимизированный HTML/CSS/JS, гарантируем идеальное отображение на мобильных устройствах (Mobile-first) и настраиваем плавные микро-анимации, которые оживляют интерфейс.</p>
+										</div>
+									</div>
+									<div>
+										<div class="uk-padding uk-padding-remove-vertical">
+											<p>Перед запуском интегрируем все формы с CRM-системой, Telegram или почтой. Устанавливаем и настраиваем счетчики Яндекс.Метрики и Google Analytics 4, пробрасываем события конверсий, чтобы вы могли оценивать эффективность каждого вложенного рубля.</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -554,9 +543,9 @@
 			<h2 class="uk-text-center uk-text-bold uk-text-uppercase">Вопросы и ответы</h2>
 			<ul class="uk-margin-remove" uk-accordion>
 				<li class="uk-open">
-					<a class="uk-accordion-title" href>Формат работы</a>
+					<a class="uk-accordion-title" href>Сколько времени занимает разработка Landing Page?</a>
 					<div class="uk-accordion-content">
-						<p>Консультации возможны в двух форматах: онлайн по видеосвязи и очно в Москве, в кабинете рядом с метро Чеховская. Я работаю в формате длительной жизнеизменяющей терапии, т.к. уверена, что глубокие и устойчивые результаты невозможно получить за 2−3 встречи. Эффективная частота встреч не реже одного раза в неделю.</p>
+						<p>В среднем разработка качественного лендинга под ключ занимает от 14 до 25 дней. Сроки зависят от сложности дизайна, наличия исходных материалов (тексты, фото) и скорости согласования этапов. Если вам нужен сайт быстрее, мы можем использовать готовые UI-решения, что сократит срок до 7-10 дней.</p>
 						<div class="accordion-footer">
 							<div class="uk-grid-small uk-flex-middle uk-child-width-auto" uk-grid>
 								<div>
@@ -572,9 +561,9 @@
 					</div>
 				</li>
 				<li>
-					<a class="uk-accordion-title" href>Стоимость</a>
+					<a class="uk-accordion-title" href>Вы пишете тексты (копирайтинг) или нам нужно давать свои?</a>
 					<div class="uk-accordion-content">
-						<p>Консультации возможны в двух форматах: онлайн по видеосвязи и очно в Москве, в кабинете рядом с метро Чеховская. Я работаю в формате длительной жизнеизменяющей терапии, т.к. уверена, что глубокие и устойчивые результаты невозможно получить за 2−3 встречи. Эффективная частота встреч не реже одного раза в неделю. </p>
+						<p>Мы полностью берем копирайтинг на себя. Перед началом работы мы проводим подробный бриф с вами или вашим отделом продаж, собираем всю фактуру о продукте, а затем наш маркетолог упаковывает это в продающие смыслы. Если у вас уже есть готовые тексты, мы можем взять их за основу и доработать под формат лендинга.</p>
 						<div class="accordion-footer">
 							<div class="uk-grid-small uk-flex-middle uk-child-width-auto" uk-grid>
 								<div>
@@ -590,9 +579,9 @@
 					</div>
 				</li>
 				<li>
-					<a class="uk-accordion-title" href>О терапии со мной</a>
+					<a class="uk-accordion-title" href>Смогу ли я сам редактировать контент после запуска?</a>
 					<div class="uk-accordion-content">
-						<p>Помимо стоимости автомобиля и доставки, будет 5% оплата за наши услуги.</p>
+						<p>Да, по вашему желанию мы можем интегрировать лендинг с удобной системой управления (CMS), такой как WordPress, или использовать интуитивные no-code платформы (Webflow, Tilda). Вы сможете легко менять тексты, цены и фото без привлечения программиста.</p>
 						<div class="accordion-footer">
 							<div class="uk-grid-small uk-flex-middle uk-child-width-auto" uk-grid>
 								<div>
@@ -627,30 +616,29 @@
 										</h3>
 									</div>
 									<div class="uk-width-expand">
-										<span class="badge-gift"><img src="/img/elements/tag.png"> -25%</span>
+										<span class="badge-gift"><img src="/img/elements/tag.png">Шаблон</span>
 									</div>
 								</div>
 								<ul class="features-list">
-									<li><span class="check-icon"></span> Лидогенератор</li>
-									<li><span class="check-icon"></span> Google-аналитика</li>
-									<li><span class="check-icon"></span> Поисковая реклама</li>
+									<li><span class="check-icon"></span> Готовые UI-блоки</li>
+									<li><span class="check-icon"></span> Базовый копирайтинг</li>
+									<li><span class="check-icon"></span> Адаптивная верстка</li>
 									<li>
-										<span class="check-icon"></span> Бюджет от 
-										<span class="price-tag">$150/месяц</span>
+										<span class="check-icon"></span> Форма заявки
 									</li>
 									<li>
 										<div class="divider"></div>
 									</li>
-									<li><span class="check-icon"></span> Запуск от 3 дней</li>
-									<li><span class="check-icon"></span> Ведение от 3 месяцев</li>
+									<li><span class="check-icon"></span> Срок от 7 дней</li>
+									<li><span class="check-icon"></span> Гарантия 1 месяц</li>
 									<li>
 										<span class="check-icon"></span> Стоимость от
-										<span class="price-tag">$600</span>
+										<span class="price-tag">$400</span>
 									</li>
 								</ul>
 							</div>
 							<div>
-								<a href="#modal-form" uk-toggle class="uk-button uk-button-secondary uk-button-large uk-width-1-1 border-rounded">Получить стратегию</a>
+								<a href="#modal-form" uk-toggle class="uk-button uk-button-secondary uk-button-large uk-width-1-1 border-rounded">Выбрать тариф</a>
 							</div>
 						</div>
 					</div>
@@ -663,37 +651,33 @@
 								<div class="uk-grid-small uk-flex-middle uk-margin-bottom" uk-grid>
 									<div class="uk-width-auto">
 										<h3 class="uk-h3 uk-text-bold">
-										ПОТОК
+										БИЗНЕС
 										</h3>
 									</div>
 									<div class="uk-width-expand">
-										<span class="badge-gift"><img src="/img/elements/gift.png">Лендинг</span>
+										<span class="badge-gift"><img src="/img/elements/gift.png">Хит</span>
 									</div>
 								</div>
 								<ul class="features-list">
-									<li><span class="check-icon"></span> Посадочная страница</li>
-									<li><span class="check-icon"></span> Google-аналитика</li>
-									<li><span class="check-icon"></span> Поисковая реклама</li>
-									<li><span class="check-icon"></span> Медийная реклама</li>
-									<li><span class="check-icon"></span> Ремаркетинг</li>
-									<li>
-										<span class="check-icon"></span> Бюджет от 
-										<span class="price-tag">$300/месяц</span>
-									</li>
+									<li><span class="check-icon"></span> Индивидуальный дизайн</li>
+									<li><span class="check-icon"></span> Маркетинговый анализ</li>
+									<li><span class="check-icon"></span> Продвинутые анимации</li>
+									<li><span class="check-icon"></span> Интеграция Яндекс.Метрики</li>
+									<li><span class="check-icon"></span> Базовая SEO оптимизация</li>
 									<li>
 										<div class="divider"></div>
 									</li>
-									<li><span class="check-icon"></span> Запуск от 10 дней</li>
-									<li><span class="check-icon"></span> Ведение от 3 месяцев</li>
+									<li><span class="check-icon"></span> Срок от 14 дней</li>
+									<li><span class="check-icon"></span> Гарантия 3 месяца</li>
 									
 									<li>
 										<span class="check-icon"></span> Стоимость от
-										<span class="price-tag">$1050</span>
+										<span class="price-tag">$850</span>
 									</li>
 								</ul>
 							</div>
 							<div>
-								<a href="#modal-form" uk-toggle class="uk-button uk-button-secondary uk-button-large uk-width-1-1 border-rounded">Получить стратегию</a>
+								<a href="#modal-form" uk-toggle class="uk-button uk-button-secondary uk-button-large uk-width-1-1 border-rounded">Выбрать тариф</a>
 							</div>
 						</div>
 					</div>
@@ -706,32 +690,27 @@
 								<div class="uk-grid-small uk-flex-middle uk-margin-bottom" uk-grid>
 									<div class="uk-width-auto">
 										<h3 class="uk-h3 uk-text-bold">
-										НИРВАНА
+										PREMIUM
 										</h3>
 									</div>
 									<div class="uk-width-expand">
-										<span class="badge-gift"><img src="/img/elements/safe.png">Секрет</span>
+										<span class="badge-gift"><img src="/img/elements/safe.png">Под ключ</span>
 									</div>
 								</div>
 								<ul class="features-list">
-									<li><span class="check-icon"></span> Мультипосадочная страница</li>
-									<li><span class="check-icon"></span> Индивидуальная аналитика</li>
-									<li><span class="check-icon"></span> Поисковая реклама</li>
-									<li><span class="check-icon"></span> Медийная реклама</li>
-									<li><span class="check-icon"></span> SEO-продвижение</li>
-									<li><span class="check-icon"></span> Ремаркетинг</li>
-									<li>
-										<span class="check-icon"></span> Бюджет от 
-										<span class="price-tag">$1000/месяц</span>
-									</li>
+									<li><span class="check-icon"></span> Эксклюзивный UX/UI</li>
+									<li><span class="check-icon"></span> Глубокая аналитика и A/B тесты</li>
+									<li><span class="check-icon"></span> Настройка рекламных кампаний</li>
+									<li><span class="check-icon"></span> Интеграция с CRM и сквозная аналитика</li>
+									<li><span class="check-icon"></span> 3D элементы и сложная верстка</li>
 									<li>
 										<div class="divider"></div>
 									</li>
-									<li><span class="check-icon"></span> Запуск от 40 дней</li>
-									<li><span class="check-icon"></span> Ведение от 6 месяцев</li>
+									<li><span class="check-icon"></span> Срок от 25 дней</li>
+									<li><span class="check-icon"></span> Поддержка 6 месяцев</li>
 									<li>
 										<span class="check-icon"></span> Стоимость от 
-										<span class="price-tag">$7200</span>
+										<span class="price-tag">$2000</span>
 									</li>
 								</ul>
 							</div>
@@ -750,9 +729,6 @@
 
 
 		<div id="leacli-modal-menu"></div>
-				</div>
-			</div>
-		</div>
 
 		<div id="leacli-modal-form"></div>
 

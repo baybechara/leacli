@@ -1014,7 +1014,7 @@ img.services-team-card-img {
 .devhero-circle {
     width: 42.166%;
     z-index: 2;
-    transform: translate(-50%, -50%);
+    animation: devhero-spin 40s linear infinite reverse;
 }
 
 .devhero-orbit {
