@@ -225,6 +225,26 @@ span.text-hero {
 .victor {
 	padding: 0px 20px;
 }
+.victor-mobile {
+	position: relative;
+	padding: 0px !important;
+	max-width: 320px;
+	margin: 0 auto;
+}
+.victor-glow {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	background: radial-gradient(circle, rgba(255,130,34,0.15) 0%, rgba(255,130,34,0) 70%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+	filter: blur(40px);
+}
+.victor-content {
+	z-index: 1;
+}
 .victor img {
 	border-radius: 30px;
 	background-color: rgba(0, 0, 0, 0.05);
