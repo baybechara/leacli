@@ -228,7 +228,6 @@ span.text-hero {
 .victor-mobile {
 	position: relative;
 	padding: 0px !important;
-	max-width: 320px;
 	margin: 0 auto;
 }
 .victor-glow {
@@ -252,6 +251,10 @@ span.text-hero {
 	-webkit-backdrop-filter: blur(15px);
 	border: 1px solid rgba(255, 255, 255, 0.05);
 	animation: float 6s ease-in-out infinite;
+}
+
+.victor-mobile .victor-content > img {
+	animation: none;
 }
 
 @keyframes fadeInUp {
